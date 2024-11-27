@@ -1,8 +1,17 @@
-import styles from './App.module.css'
+import React from 'react';
+import Navbar from './components/Navbar';
+import AboutMe from './pages/AboutMe';
+import Styles from './styles/App.module.css';
 
-function App() {
+const App = () => {
   return (
-    <div className={styles.App}>Hello world</div>
+    <div className="App">
+      <Navbar />
+      <main>
+        <AboutMe />
+      </main>
+    </div>
+
   )
 }
 

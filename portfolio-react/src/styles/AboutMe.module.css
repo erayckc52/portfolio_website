@@ -1,0 +1,29 @@
+@import "./vars.css";
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.textSection {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSection img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--color-primary);
+}
