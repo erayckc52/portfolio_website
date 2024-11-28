@@ -11,8 +11,8 @@
 }
 
 .textSection {
-    flex: 1;
-    margin-right: 2rem;
+    flex: 2;
+    margin-right: 3rem;
 }
 
 .imageSection {
@@ -24,6 +24,12 @@
 
 .imageSection img {
     max-width: 250px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 0 15px var(--color-primary);
+}
+
+.paragraph {
+    margin-bottom: 2rem;
 }
