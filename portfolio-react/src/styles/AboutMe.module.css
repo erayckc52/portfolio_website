@@ -8,11 +8,22 @@
     padding: 2rem;
     color: var(--color-text);
     background-color: var(--color-bg);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 70%;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
 }
 
 .textSection {
-    flex: 2;
-    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .imageSection {
@@ -20,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .imageSection img {
@@ -31,5 +43,6 @@
 }
 
 .paragraph {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }

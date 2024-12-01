@@ -10,7 +10,6 @@ import Styles from './styles/App.module.css';
 const App = () => {
   return (
     <Router>
-        <div className="App">
           <Navbar />
           <Routes>
             <Route path="/" element={<AboutMe />} />
@@ -18,7 +17,6 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
     </Router>
   )
 }

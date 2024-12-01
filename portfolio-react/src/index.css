@@ -8,4 +8,5 @@ body {
     font-family: var(--font-robot);
     background-color: var(--color-bg);
     color: var(--color-text);
+    overflow: hidden;
 }

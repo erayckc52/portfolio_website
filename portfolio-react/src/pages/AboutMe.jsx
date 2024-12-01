@@ -5,6 +5,7 @@ import animatedIcon from '../assets/images/animated-icon.gif';
 const AboutMe = () => {
   return (
     <section id="about" className={styles.aboutMe}>
+      <div className={styles.box}>
       <div className={styles.textSection}>
         <h2 className={styles.paragraph}>About Me</h2>
         <p className={styles.paragraph}>
@@ -36,7 +37,7 @@ const AboutMe = () => {
         Whether you're a fellow developer, a potential collaborator or someone curious about my journey, 
         I'm excited to connect and explore new opportunities.
         </p>
-
+      </div>
       </div>
       <div className={styles.imageSection}>
         <img src={animatedIcon} alt="Animated Icon" />
