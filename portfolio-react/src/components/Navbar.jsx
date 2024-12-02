@@ -1,7 +1,9 @@
+// React and styling imports
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 
+// Navbar that allows user to navigate to specific pages
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
