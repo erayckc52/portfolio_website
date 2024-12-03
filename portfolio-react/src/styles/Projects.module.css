@@ -1,0 +1,99 @@
+@import './vars.css';
+
+.projectsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-primary);
+}
+
+.button.active {
+    background-color: var(--color-primary);
+}
+
+.projectDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1400px;
+    padding: 2rem;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.leftColumn {
+    flex: 2;
+    text-align: left;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetails h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.projectDetails p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.projectDetails h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+
+.projectDetails ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projectDetails ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.projectImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
