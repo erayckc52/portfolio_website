@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styles from '../styles/Contact.module.css';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
-const ContactForm = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -43,56 +44,88 @@ const ContactForm = () => {
   };
 
   return (
-    <form className={styles.contactForm} onSubmit={handleSubmit}>
-      <div className={styles.formGroup}>
-        <label htmlFor="firstName">First Name</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
+    <div className={styles.contactPage}>
+      {/*Email form*/}
+      <div className={styles.formContainer}>
+        <h2>Contact Me</h2>
+        <form className={styles.contactForm} onSubmit={handleSubmit}>
+          <div className={styles.formGroup}>
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className={styles.submitButton}>
+            Send Message
+          </button>
+        </form>
       </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="lastName">Last Name</label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
+      <div className={styles.socialLinks}>
+        <a
+          href="https://www.linkedin.com/in/eray-cekic-935449253/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className={styles.icon} />
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/erayckc52"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className={styles.icon} />
+          GitHub
+        </a>
+        <a
+          href="https://www.instagram.com/eraycekxc/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className={styles.icon} />
+          Instagram
+        </a>
       </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="email">Your Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className={styles.formGroup}>
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-      </div>
-      <button type="submit" className={styles.submitButton}>
-        Send Message
-      </button>
-    </form>
+    </div>
   );
 };
 
-export default ContactForm;
+export default Contact;

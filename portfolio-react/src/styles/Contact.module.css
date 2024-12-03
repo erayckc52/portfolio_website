@@ -1,12 +1,41 @@
+@import './vars.css';
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-primary);
+    margin-bottom: 2rem;
+}
+
 .contactForm {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .formGroup {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 label {
@@ -17,10 +46,11 @@ label {
 input, textarea {
     padding: 0.8rem;
     font-size: 1rem;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--color-primary);
     border-radius: 5px;
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
     color: var(--color-text);
+    width: 100%;
 }
 
 textarea {
@@ -35,8 +65,35 @@ textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .submitButton:hover {
-    background-color: var(--color-dark);
+    background-color: var(--color-secondary);
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.socialLinks a:hover {
+    color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--color-primary);
 }
