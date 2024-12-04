@@ -2,12 +2,18 @@ import React from 'react';
 import styles from '../styles/AboutMe.module.css';
 import animatedIcon from '../assets/images/animated-icon.gif';
 
+// Defining the react component AboutMe
 const AboutMe = () => {
   return (
+    // Main About Me component using unique ID applying class aboutMe from CSS module
     <section id="about" className={styles.aboutMe}>
+      {/*A container for text in a styled box*/}
       <div className={styles.box}>
+        {/*Subsection for text with further styling*/}
       <div className={styles.textSection}>
+        {/*Heading for About Me with CSS styling*/}
         <h2 className={styles.paragraph}>About Me</h2>
+        {/*Paragraph about personal and professional background*/}
         <p className={styles.paragraph}>
           Hi, I'm Eray Cekic, a passionate and curious software engineer with a strong drive 
           to build meaningful solutions and solve complex problems. 
@@ -33,17 +39,21 @@ const AboutMe = () => {
           I value humor, adaptability and a relentless pursuit of growth both personally and professionally.
         </p>
         <p className={styles.paragraph}>
-        This website is my digital corner where I share my work and aspirations. 
-        Whether you're a fellow developer, a potential collaborator or someone curious about my journey, 
-        I'm excited to connect and explore new opportunities.
+          This website is my digital corner where I share my work and aspirations. 
+          Whether you're a fellow developer, a potential collaborator or someone curious about my journey, 
+          I'm excited to connect and explore new opportunities.
         </p>
       </div>
       </div>
+
+      {/*Container for image*/}
       <div className={styles.imageSection}>
+        {/*Displaying animated icon with alt text*/}
         <img src={animatedIcon} alt="Animated Icon" />
       </div>
     </section>
   );
 };
 
+// Exporting AboutMe component for usage outside
 export default AboutMe;

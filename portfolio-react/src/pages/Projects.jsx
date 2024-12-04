@@ -52,11 +52,11 @@ const Projects = () => {
         <div className={styles.leftColumn}>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
-          <h3>Key Features</h3>
+          <h3>Key Features:</h3>
           <p>{project.features}</p>
-          <h3>Technologies Used</h3>
+          <h3>Technologies Used:</h3>
           <p>{project.technologies}</p>
-          <h3>Challenges Overcome</h3>
+          <h3>Challenges Overcome:</h3>
           <ul>
           {project.challenges.map((challenge, index) => (
               <li key={index}>{challenge}</li>

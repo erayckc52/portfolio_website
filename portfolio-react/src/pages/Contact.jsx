@@ -3,7 +3,9 @@ import emailjs from 'emailjs-com';
 import styles from '../styles/Contact.module.css';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
+// Defining Contact component
 const Contact = () => {
+  // Store form data
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -11,14 +13,17 @@ const Contact = () => {
     message: '',
   });
 
+  // Handling form data to update as user types
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value } = e.target; // Extract name and value from input
+    setFormData({ ...formData, [name]: value }); // Updating relative field
   };
 
+  // Handling form data to update as user types
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Sending email to EmailJS
     emailjs
       .send(
         'service_sbo9afb',
