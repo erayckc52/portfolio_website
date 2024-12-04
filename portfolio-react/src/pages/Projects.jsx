@@ -23,10 +23,25 @@ const Projects = () => {
         'Balancing aesthetics and usability to create an intuitive design.',
         'Ensuring responsive design across various screen sizes and devices.',
         'Implementing secure form submissions using EmailJS while preventing vulnerabilities.',
-        'Debugging and optimizing dynamic state-based components for better user experience.',
+        'Debugging and optimizing dynamic state based components for better user experience.',
         'Creating a visually engaging and professional layout for project presentation.'
       ],
       image: portfolioImage,
+    },
+    tbd: {
+      title: 'TBD',
+      description: `
+        
+      `,
+      features: `
+        
+      `,
+      technologies: `
+        
+      `,
+      challenges: [
+        ''
+      ],
     },
   };
 
@@ -68,6 +83,18 @@ const Projects = () => {
           onClick={() => setActiveProject('portfolio')}
         >
           Portfolio Website
+        </button>
+        <button
+          className={`${styles.button} ${activeProject === 'tbd' ? styles.active : ''}`}
+          onClick={() => setActiveProject('tbd')}
+        >
+          TBD
+        </button>
+        <button
+          className={`${styles.button} ${activeProject === 'tbd' ? styles.active : ''}`}
+          onClick={() => setActiveProject('tbd')}
+        >
+          TBD
         </button>
       </div>
 
