@@ -1,5 +1,6 @@
 @import "./vars.css";
 
+/*Styling the main container for the About Me section*/
 .aboutMe {
     display: flex;
     flex-direction: row;
@@ -12,6 +13,7 @@
     box-sizing: border-box;
 }
 
+/*Styling the box that contains text*/
 .box {
     width: 70%;
     background-color: var(--color-dark);
@@ -21,11 +23,13 @@
     box-shadow: 0 4px 15px rgb(0, 0, 0);
 }
 
+/*Styling text container within the box*/
 .textSection {
     display: flex;
     flex-direction: column;
 }
 
+/*Styling container for image*/
 .imageSection {
     flex: 1;
     display: flex;
@@ -34,6 +38,7 @@
     margin-left: 2rem;
 }
 
+/*Styling image inside image section*/
 .imageSection img {
     max-width: 250px;
     width: 100%;
@@ -42,6 +47,7 @@
     box-shadow: 0 0 15px var(--color-primary);
 }
 
+/*Styling individual paragraphs in the text section*/
 .paragraph {
     margin-bottom: 1.5rem;
     line-height: 1.6;

@@ -1,9 +1,11 @@
+/* Main styling*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Body styling */
 body {
     font-family: var(--font-robot);
     background-color: var(--color-bg);

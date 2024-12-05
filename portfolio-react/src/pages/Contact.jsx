@@ -26,21 +26,23 @@ const Contact = () => {
     // Sending email to EmailJS
     emailjs
       .send(
-        'service_sbo9afb',
-        'template_xhczehg',
+        'service_sbo9afb', // EmailJS service ID
+        'template_xhczehg', // EmailJS template ID
         {
           from_name: `${formData.firstName} ${formData.lastName}`,
           from_email: formData.email,
           message: formData.message,
         },
-        '0Q4cnZKgnikDCZEr4'
+        '0Q4cnZKgnikDCZEr4' // EmailJS public API key
       )
       .then(
         (result) => {
+          // If successfully sent
           console.log('Message sent:', result.text);
           alert('Message sent successfully!');
           setFormData({ firstName: '', lastName: '', email: '', message: '' });
         },
+        // If error with sending email
         (error) => {
           console.error('Error:', error.text);
           alert('Failed to send the message. Please try again.');
@@ -49,22 +51,25 @@ const Contact = () => {
   };
 
   return (
+    // Main container for contact page
     <div className={styles.contactPage}>
       {/*Email form*/}
       <div className={styles.formContainer}>
-        <h2>Contact Me</h2>
+        <h2>Contact Me</h2> {/*Section heading*/}
         <form className={styles.contactForm} onSubmit={handleSubmit}>
+          {/*First name field*/}
           <div className={styles.formGroup}>
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">First Name</label> {/*Label for input*/}
             <input
               type="text"
               id="firstName"
               name="firstName"
               value={formData.firstName}
-              onChange={handleChange}
-              required
+              onChange={handleChange} // update state on change
+              required // mandatory input
             />
           </div>
+          {/*Last name field*/}
           <div className={styles.formGroup}>
             <label htmlFor="lastName">Last Name</label>
             <input
@@ -76,6 +81,7 @@ const Contact = () => {
               required
             />
           </div>
+          {/*Email field*/}
           <div className={styles.formGroup}>
             <label htmlFor="email">Your Email</label>
             <input
@@ -87,6 +93,7 @@ const Contact = () => {
               required
             />
           </div>
+          {/*Message textarea*/}
           <div className={styles.formGroup}>
             <label htmlFor="message">Message</label>
             <textarea
@@ -98,11 +105,13 @@ const Contact = () => {
               required
             ></textarea>
           </div>
+          {/*Submit button*/}
           <button type="submit" className={styles.submitButton}>
             Send Message
           </button>
         </form>
       </div>
+      {/*Social media links*/}
       <div className={styles.socialLinks}>
         <a
           href="https://www.linkedin.com/in/eray-cekic-935449253/"
@@ -132,5 +141,5 @@ const Contact = () => {
     </div>
   );
 };
-
+// Exporting Contact component for usage outside
 export default Contact;

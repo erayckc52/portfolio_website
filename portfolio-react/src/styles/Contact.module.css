@@ -1,5 +1,6 @@
 @import './vars.css';
 
+/* Styling for the main contact page container */
 .contactPage {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     color: var(--color-text);
 }
 
+/* Styling for the form container */
 .formContainer {
     width: 100%;
     max-width: 800px;
@@ -25,6 +27,7 @@
     margin-bottom: 2rem;
 }
 
+/* Styling for the form layout */
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -32,17 +35,20 @@
     width: 100%;
 }
 
+/* Styling for individual form groups */
 .formGroup {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+/* Styling for form labels */
 label {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
+/* Shared styling for input fields and the textarea */
 input, textarea {
     padding: 0.8rem;
     font-size: 1rem;
@@ -53,10 +59,12 @@ input, textarea {
     width: 100%;
 }
 
+/* Additional styling for the textarea */
 textarea {
     resize: none;
 }
 
+/* Styling for the submit button */
 .submitButton {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
@@ -68,16 +76,19 @@ textarea {
     transition: background-color 0.3s;
 }
 
+/* Hover effect for the submit button */
 .submitButton:hover {
     background-color: var(--color-secondary);
 }
 
+/* Styling for the social links container */
 .socialLinks {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
+/* Styling for individual social link elements */
 .socialLinks a {
     display: flex;
     align-items: center;
@@ -88,11 +99,13 @@ textarea {
     transition: color 0.3s, transform 0.3s;
 }
 
+/* Hover effect for social links */
 .socialLinks a:hover {
     color: var(--color-primary);
     transform: scale(1.1);
 }
 
+/* Styling for social media icons */
 .icon {
     font-size: 2rem;
     color: var(--color-primary);

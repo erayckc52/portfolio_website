@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Styles from './styles/App.module.css';
 
+// Defining the main App component
 const App = () => {
   return (
     <Router>
@@ -21,4 +22,5 @@ const App = () => {
   )
 }
 
+// Exporting App component for rendering in the main application
 export default App

@@ -1,5 +1,6 @@
 @import "./vars.css";
 
+/* Styling for the main navigation bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -9,27 +10,32 @@
     color: var(--color-text);
 }
 
+/* Styling for the logo in the navbar */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+/* Styling for the container of navigation links */
 .navLinks {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
+/* Styling for individual navigation links */
 .navLinks a {
     text-decoration: none;
     color: var(--color-text);
     transition: color 0.3s, font-weight 0.3s;
 }
 
+/* Hover effect for navigation links */
 .navLinks a:hover {
     color: var(--color-primary);
 }
 
+/* Styling for the active navigation link */
 .navLinks a.active {
     color: var(--color-primary);
 }

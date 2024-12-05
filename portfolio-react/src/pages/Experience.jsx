@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import styles from '../styles/Experience.module.css';
 
+// Defining Experience functional component
 const Experience = () => {
+  // Tracking current active section
   const [activeSection, setActiveSection] = useState('workExperience');
 
+  // Content for work experience section
   const workExperienceContent = (
     <>
       <h2>Work Experience</h2>
@@ -25,6 +28,7 @@ const Experience = () => {
     </>
   );
 
+  // Content for technical skills section
   const technicalSkillsContent = (
     <>
   <h2>Technical Skills</h2>
@@ -94,6 +98,7 @@ const Experience = () => {
 </>
   );
 
+  // Rendering Experience component
   return (
     <div className={styles.experiencePage}>
       <div className={styles.leftPanel}>
@@ -125,4 +130,5 @@ const Experience = () => {
   );
 };
 
+// Exporting Experience component for usage outside
 export default Experience;

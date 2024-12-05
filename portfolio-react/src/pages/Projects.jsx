@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import styles from '../styles/Projects.module.css';
 import portfolioImage from '../assets/images/portfolio-animated.gif';
 
+// Defining the Projects functional component
 const Projects = () => {
+  // State to track active project displayed
   const [activeProject, setActiveProject] = useState('portfolio');
 
+  // Object containing details of all projects
   const projects = {
+    // Information on portfolio project
     portfolio: {
       title: 'Personal Portfolio Website',
       description: `
@@ -28,6 +32,7 @@ const Projects = () => {
       ],
       image: portfolioImage,
     },
+    // Placeholder for future projects (To Be Determined)
     tbd: {
       title: 'TBD',
       description: `
@@ -45,7 +50,9 @@ const Projects = () => {
     },
   };
 
+  // Function to render the details of the active project
   const renderProjectDetails = () => {
+    // Retrieve the active projects details
     const project = projects[activeProject];
     return (
       <div className={styles.projectDetails}>
@@ -77,6 +84,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsPage}>
+      {/*Buttons to toggle between different projects*/}
       <div className={styles.buttonsContainer}>
         <button
           className={`${styles.button} ${activeProject === 'portfolio' ? styles.active : ''}`}
@@ -98,9 +106,11 @@ const Projects = () => {
         </button>
       </div>
 
+      {/*Rendering details of the active project*/}
       {renderProjectDetails()}
     </div>
   );
 };
 
+// Exporting Projects component for usage outside
 export default Projects;
