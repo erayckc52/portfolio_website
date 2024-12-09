@@ -6,8 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--color-dark);
+    background-color: #424242;
     color: var(--color-text);
+    z-index: 100;
 }
 
 /* Styling for the logo in the navbar */

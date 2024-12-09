@@ -4,23 +4,52 @@
 .aboutMe {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     color: var(--color-text);
     background-color: var(--color-bg);
     height: 100vh;
     box-sizing: border-box;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/*Styling video background*/
+.videoBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind all other elements */
 }
 
 /*Styling the box that contains text*/
 .box {
+    height: 50%;
     width: 70%;
-    background-color: var(--color-dark);
+    max-width: 1100px;
+    background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid var(--color-primary);
-    border-radius: 0px;
+    border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 4px 15px rgb(0, 0, 0);
+    box-shadow: 0 4px 15px var(--color-boxshadow);
+    text-align: left;
+}
+
+/*Styling for the box title*/
+.box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    text-align: left;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+
 }
 
 /*Styling text container within the box*/
@@ -31,16 +60,17 @@
 
 /*Styling container for image*/
 .imageSection {
-    flex: 1;
+    flex: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
+    margin-right: 6rem;
 }
 
 /*Styling image inside image section*/
 .imageSection img {
-    max-width: 250px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -50,5 +80,6 @@
 /*Styling individual paragraphs in the text section*/
 .paragraph {
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.5rem;
 }
