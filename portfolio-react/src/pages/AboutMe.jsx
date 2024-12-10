@@ -29,8 +29,12 @@ const AboutMe = () => {
         <h2 className={styles.paragraph}>About Me</h2>
         {/*Paragraph about personal and professional background*/}
         <p className={styles.paragraph}>
-        Hi, I'm Eray Cekic, a software engineer passionate about personal growth and developing innovative ideas. 
-        My goal is to continuously excel in my field by expanding my knowledge and honing my skills to deliver exceptional work.
+          I'm <span className={styles.highlight}>Eray Cekic</span>, a <span className={styles.highlight}>Software Engineer</span> driven 
+          by a commitment to continuous growth and innovation.
+        </p>
+        <p className={styles.paragraph}> 
+          I strive to create impactful solutions that address complex challenges with precision and creativity by
+          focusing on learning and refining my skills.
         </p>
       </div>
       </div>

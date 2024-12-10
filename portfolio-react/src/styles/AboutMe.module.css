@@ -24,32 +24,35 @@
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-    z-index: -1; /* Place the video behind all other elements */
+    z-index: -1;
 }
 
 /*Styling the box that contains text*/
 .box {
-    height: 50%;
-    width: 70%;
-    max-width: 1100px;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: auto;
+    max-width: 55%;
+    min-width: 300px;
+    height: auto;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
     border: 1px solid var(--color-primary);
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 15px var(--color-boxshadow);
     text-align: left;
+    overflow: hidden;
 }
 
 /*Styling for the box title*/
 .box h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     color: var(--color-primary);
     text-align: left;
     border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0.5rem;
-
+    font-weight: bold;
 }
 
 /*Styling text container within the box*/
@@ -70,16 +73,21 @@
 
 /*Styling image inside image section*/
 .imageSection img {
-    max-width: 200px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 15px var(--color-primary);
 }
 
 /*Styling individual paragraphs in the text section*/
 .paragraph {
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/*Styling certain words to stand out*/
+.highlight {
+    color: var(--color-primary);
+    font-weight: bold;
 }
