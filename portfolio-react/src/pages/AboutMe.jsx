@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/AboutMe.module.css';
 import animatedIcon from '../assets/images/animated-icon.gif';
-import bgVideo from '../assets/images/bg2.mp4';
+import bgVideo from '../assets/videos/bg2.mp4';
 
 // Defining the react component AboutMe
 const AboutMe = () => {
@@ -29,12 +29,11 @@ const AboutMe = () => {
         <h2 className={styles.paragraph}>About Me</h2>
         {/*Paragraph about personal and professional background*/}
         <p className={styles.paragraph}>
-          I'm <span className={styles.highlight}>Eray Cekic</span>, a <span className={styles.highlight}>Software Engineer</span> driven 
-          by a commitment to continuous growth and innovation.
+          My name is Eray Cekic, I'm a passionate Software Engineer that looks for endless growth throughout my career.
         </p>
         <p className={styles.paragraph}> 
-          I strive to create impactful solutions that address complex challenges with precision and creativity by
-          focusing on learning and refining my skills.
+          With utmost determination, I hope to create meaningful solutions to any problem I come across, whether it appear
+          in a work environment or even daily life.
         </p>
       </div>
       </div>
