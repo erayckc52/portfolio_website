@@ -15,6 +15,7 @@
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
+    color: var(--color-highlight);
 }
 
 /* Styling for the container of navigation links */
@@ -33,10 +34,10 @@
 
 /* Hover effect for navigation links */
 .navLinks a:hover {
-    color: var(--color-primary);
+    color: var(--color-highlight);
 }
 
 /* Styling for the active navigation link */
 .navLinks a.active {
-    color: var(--color-primary);
+    color: var(--color-highlight);
 }

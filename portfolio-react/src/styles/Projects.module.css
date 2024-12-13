@@ -38,7 +38,7 @@
     background-color: var(--color-dark);
     color: var(--color-text);
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s;
 }

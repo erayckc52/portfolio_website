@@ -12,19 +12,16 @@ const Experience = () => {
     <>
       <h2>Work Experience</h2>
       <p>
-        <strong>Web Developer Intern at Frontier Software: </strong> 
-        <li>Focused on front-end development tasks by implementing and integrating navigation elements into the existing system.</li>
-        <li>Edited CSS files to maintain design consistency and ensure an intuitive user experience across different devices.</li>
-        <li>Contributed to routing functionalities ensuring smooth and efficient page transitions.</li>
-        <li>Collaborated closely with the team in an Agile working environment participating in two week sprints and managing PBIs to meet deadlines.</li>
-        <li>Strengthened my problem solving skills and gained hands on exposure to the best practices in front-end development.</li>
+        <strong>Web Developer Intern at Frontier Software:</strong>
+        <li>Developed front-end features, including navigation elements and routing functionalities.</li>
+        <li>Optimized CSS for consistent design and responsiveness across devices.</li>
+        <li>Collaborated in Agile sprints, managing PBIs and meeting deadlines.</li>
       </p>
       <p>
-        <strong>Technical Support Consultant at Frontier Software: </strong>
-        <li>Supported internal and external clients by troubleshooting technical issues in software systems.</li>
-        <li>Played a key role in diagnosing and resolving software bugs ensuring smooth operations for end users.</li>
-        <li>Primarily worked with SQL and Oracle databases to maintain and improve system functionality.</li>
-        <li>Enhanced my ability to analyze complex systems and provide timely solutions in high pressure environments.</li>
+        <strong>Technical Support Consultant at Frontier Software:</strong>
+        <li>Resolved technical issues and software bugs for clients, ensuring smooth operations.</li>
+        <li>Maintained and optimized SQL and Oracle databases for improved functionality.</li>
+        <li>Delivered timely solutions under high-pressure scenarios, enhancing problem-solving skills.</li>
       </p>
     </>
   );
