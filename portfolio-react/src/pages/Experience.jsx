@@ -13,13 +13,13 @@ const Experience = () => {
       <h2>Work Experience</h2>
       <p>
         <strong>Web Developer Intern at Frontier Software:</strong>
-        <li>Developed front-end features, including navigation elements and routing functionalities.</li>
-        <li>Optimized CSS for consistent design and responsiveness across devices.</li>
+        <li>Developed front-end features including navigation elements and routing functionalities.</li>
+        <li>Optimized CSS for consistent design and responsiveness across devices and platforms.</li>
         <li>Collaborated in Agile sprints, managing PBIs and meeting deadlines.</li>
       </p>
       <p>
         <strong>Technical Support Consultant at Frontier Software:</strong>
-        <li>Resolved technical issues and software bugs for clients, ensuring smooth operations.</li>
+        <li>Resolved technical issues and software bugs for clients ensuring smooth operations.</li>
         <li>Maintained and optimized SQL and Oracle databases for improved functionality.</li>
         <li>Delivered timely solutions under high-pressure scenarios, enhancing problem-solving skills.</li>
       </p>

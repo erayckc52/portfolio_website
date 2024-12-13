@@ -70,7 +70,7 @@
 /* Styling for the content box displaying detailed information */
 .contentBox {
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.548);
   border: 1px solid var(--color-primary2);
   border-radius: 10px;
   padding: 1.5rem;

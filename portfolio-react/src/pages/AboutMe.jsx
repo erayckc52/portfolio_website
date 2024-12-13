@@ -29,11 +29,11 @@ const AboutMe = () => {
         <h2 className={styles.paragraph}>About Me</h2>
         {/*Paragraph about personal and professional background*/}
         <p className={styles.paragraph}>
-          My name is Eray Cekic, I'm a passionate Software Engineer that looks for endless growth throughout my career.
+          My name is Eray Cekic, I am a passionate Software Engineer always seeking opportunities for growth and progression.
         </p>
         <p className={styles.paragraph}> 
-          With utmost determination, I hope to create meaningful solutions to any problem I come across, whether it appear
-          in a work environment or even daily life.
+          With utmost determination, I create meaningful solutions to any problem I come across, whether it be
+          in my professional or personal life.
         </p>
       </div>
       </div>
