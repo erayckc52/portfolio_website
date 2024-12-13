@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/Experience.module.css';
+import bgVideo from '../assets/videos/bg-wp4.mp4';
 
 // Defining Experience functional component
 const Experience = () => {
@@ -101,6 +102,13 @@ const Experience = () => {
   // Rendering Experience component
   return (
     <div className={styles.experiencePage}>
+
+      {/*Video Background*/}
+      <video autoPlay muted loop className={styles.videoBackground}>
+        <source src={bgVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className={styles.leftPanel}>
         <button
           className={`${styles.button} ${

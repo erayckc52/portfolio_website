@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styles from '../styles/Contact.module.css';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import bgVideo from '../assets/videos/bg-wp1.mp4';
 
 // Defining Contact component
 const Contact = () => {
@@ -53,6 +54,14 @@ const Contact = () => {
   return (
     // Main container for contact page
     <div className={styles.contactPage}>
+
+      {/*Video Background*/}
+      <video autoPlay muted loop className={styles.videoBackground}>
+        <source src={bgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+      </video>
+
+      
       {/*Email form*/}
       <div className={styles.formContainer}>
         <h2>Contact Me</h2> {/*Section heading*/}

@@ -1,14 +1,13 @@
 :root {
     /* Colours */
-    --color-primary: #00e1ff; /* Gold */
-    --color-secondary: #242424; /* Dark Grey */
-    --color-bg: #424242; /* Black */
-    --color-text: #FFFFFF; /* White */
-    --color-muted-text: #B3B3B3; /* Light Grey */
-    --color-highlight: #00BFFF; /* Electric Blue */
-    --color-alert: #FF4C4C; /* Crimson Red */
-    --color-interactive: #20B2AA; /* Teal */
-    --color-futuristic: #39FF14; /* Neon Green */
+    --color-primary: #ffbb00;
+    --color-primary2: #000000;
+    --color-primary3: #38a0c0;
+    --color-primary4: #4494f0;
+    --color-secondary: #242424;
+    --color-bg: #424242;
+    --color-text: #FFFFFF;
+    --color-highlight: #00BFFF;
     --color-boxshadow: rgb(0, 0, 0);
 
     /* Fonts */

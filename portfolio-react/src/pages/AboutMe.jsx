@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/AboutMe.module.css';
 import animatedIcon from '../assets/images/animated-icon.gif';
-import bgVideo from '../assets/videos/bg2.mp4';
+import bgVideo from '../assets/videos/bg-wp2.mp4';
 
 // Defining the react component AboutMe
 const AboutMe = () => {

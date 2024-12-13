@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Projects.module.css';
 import portfolioImage from '../assets/images/portfolio-animated.gif';
+import bgVideo from '../assets/videos/bg-wp3.mp4';
 
 // Defining the Projects functional component
 const Projects = () => {
@@ -84,6 +85,13 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsPage}>
+      
+      {/*Video Background*/}
+      <video autoPlay muted loop className={styles.videoBackground}>
+        <source src={bgVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/*Buttons to toggle between different projects*/}
       <div className={styles.buttonsContainer}>
         <button
