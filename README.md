@@ -19,7 +19,7 @@ This portfolio website serves as a showcase for my professional journey, technic
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio_website.git
+   git clone https://github.com/erayckc52/portfolio_website.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -40,23 +40,6 @@ This portfolio website serves as a showcase for my professional journey, technic
 - Read through About Me and Experience to gain an understanding of my background.
 - Use the contact form to send messages directly to me.
 - Browse through the Projects section for detailed information on my work.
-
-## Contributions
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Open a pull request.
 
 ## Contact Information
 For any inquiries, feel free to reach out:
