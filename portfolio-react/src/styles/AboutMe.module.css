@@ -34,7 +34,7 @@
     min-width: 300px;
     height: auto;
     max-height: 100%;
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.658);
     border: 1px solid var(--color-primary);
     border-radius: 10px;
     padding: 2rem;
@@ -73,10 +73,11 @@
 
 /*Styling image inside image section*/
 .imageSection img {
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
+    border: 2px solid var(--color-primary);
 }
 
 /*Styling individual paragraphs in the text section*/

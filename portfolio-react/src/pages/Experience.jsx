@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
 import styles from '../styles/Experience.module.css';
 import bgVideo from '../assets/videos/bg-wp4.mp4';
+import 'animate.css';
 
 // Defining Experience functional component
 const Experience = () => {
   // Tracking current active section
   const [activeSection, setActiveSection] = useState('workExperience');
+  const [animationClass, setAnimationClass] = useState('animate__fadeIn');
+
+  // Function to handle section change and re-trigger animation
+  const handleSectionChange = (section) => {
+    setAnimationClass('');
+    setTimeout(() => setAnimationClass('animate__fadeIn'), 0);
+    setActiveSection(section);
+  };
 
   // Content for work experience section
   const workExperienceContent = (
@@ -111,7 +120,7 @@ const Experience = () => {
           className={`${styles.button} ${
             activeSection === 'workExperience' ? styles.active : ''
           }`}
-          onClick={() => setActiveSection('workExperience')}
+          onClick={() => handleSectionChange('workExperience')}
         >
           Work Experience
         </button>
@@ -119,13 +128,13 @@ const Experience = () => {
           className={`${styles.button} ${
             activeSection === 'technicalSkills' ? styles.active : ''
           }`}
-          onClick={() => setActiveSection('technicalSkills')}
+          onClick={() => handleSectionChange('technicalSkills')}
         >
           Technical Skills
         </button>
       </div>
       <div className={styles.rightPanel}>
-        <div className={styles.contentBox}>
+        <div className={`${styles.contentBox} animate__animated ${animationClass}`}>
           {activeSection === 'workExperience'
             ? workExperienceContent
             : technicalSkillsContent}

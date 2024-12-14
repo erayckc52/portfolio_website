@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../styles/AboutMe.module.css';
-import animatedIcon from '../assets/images/animated-icon.gif';
+import portrait from '../assets/images/portrait.jpeg';
 import bgVideo from '../assets/videos/bg-wp2.mp4';
+import 'animate.css';
+
 
 // Defining the react component AboutMe
 const AboutMe = () => {
@@ -17,23 +19,30 @@ const AboutMe = () => {
 
       {/*Container for image*/}
       <div className={styles.imageSection}>
-        {/*Displaying animated icon with alt text*/}
-        <img src={animatedIcon} alt="Animated Icon" />
+        {/* Displaying portrait with animation */}
+        <img
+          src={portrait}
+          alt="Portrait"
+          className="animate__animated animate__fadeIn"
+        />
       </div>
 
       {/*A container for text in a styled box*/}
-      <div className={styles.box}>
+      <div className={`${styles.box} animate__animated animate__fadeIn`}>
         {/*Subsection for text with further styling*/}
       <div className={styles.textSection}>
         {/*Heading for About Me with CSS styling*/}
         <h2 className={styles.paragraph}>About Me</h2>
         {/*Paragraph about personal and professional background*/}
         <p className={styles.paragraph}>
-          My name is Eray Cekic, I am a passionate Software Engineer always seeking opportunities for growth and progression.
+          My name is Eray Cekic, and I am a driven Software Engineer passionate about creating innovative solutions and embracing new challenges.
         </p>
         <p className={styles.paragraph}> 
-          With utmost determination, I create meaningful solutions to any problem I come across, whether it be
-          in my professional or personal life.
+          With an unwavering commitment to excellence, I bring a problem-solving mindset and technical expertise to every project I undertake.
+        </p>
+        <p className={styles.paragraph}> 
+        I am equally comfortable working collaboratively in dynamic teams or autonomously on complex tasks, 
+        thriving in environments that allow me to contribute meaningfully while continuously advancing my skills and career.
         </p>
       </div>
       </div>

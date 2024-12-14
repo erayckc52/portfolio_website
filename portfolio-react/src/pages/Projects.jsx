@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import styles from '../styles/Projects.module.css';
-import portfolioImage from '../assets/images/portfolio-animated.gif';
+import portfolioImage from '../assets/images/portfolio-pages.png';
 import bgVideo from '../assets/videos/bg-wp3.mp4';
+import 'animate.css';
 
 // Defining the Projects functional component
 const Projects = () => {
   // State to track active project displayed
   const [activeProject, setActiveProject] = useState('portfolio');
+   // State for animation class
+  const [animationClass, setAnimationClass] = useState('animate__fadeIn');
 
   // Object containing details of all projects
   const projects = {
@@ -14,25 +17,28 @@ const Projects = () => {
     portfolio: {
       title: 'Personal Portfolio Website',
       description: `
-        This portfolio website encompasses all of my professional experience and my own learnings into one visualised place.
-        The portfolio itself has been constructed into a simple format, yet easily readable and understandable for the user.
+        A central hub showcasing my professional journey, technical skills and projects,
+        designed with simplicity and user-friendliness in mind.
       `,
-      features: `
-        The portfolio includes sections for About Me, Experience, Projects and Contact where each showcase dynamic content with 
-        smooth navigation and responsive design principles.
-      `,
+      features: (
+        <ul>
+          <li>- Interactive sections for About Me, Experience, Projects, and Contact.</li>
+          <li>- Smooth navigation and responsive design for seamless access across devices.</li>
+        </ul>
+      ),
       technologies: `
-        It has been built using React.js for dynamic components, CSS for styling and EmailJS for form submissions.
+        Built with React.js for dynamic components, styled using CSS and powered by EmailJS for efficient form handling.
       `,
-      challenges: [
-        'Balancing aesthetics and usability to create an intuitive design.',
-        'Ensuring responsive design across various screen sizes and devices.',
-        'Implementing secure form submissions using EmailJS while preventing vulnerabilities.',
-        'Debugging and optimizing dynamic state based components for better user experience.',
-        'Creating a visually engaging and professional layout for project presentation.'
-      ],
+      challenges: (
+        <ul>
+          <li>- Creating a balance between aesthetic appeal and functionality.</li>
+          <li>- Ensuring a responsive and intuitive experience across all screen sizes.</li>
+          <li>- Securing data submissions and optimizing for performance.</li>
+        </ul>
+      ),
       image: portfolioImage,
     },
+
     // Placeholder for future projects (To Be Determined)
     tbd: {
       title: 'TBD',
@@ -51,12 +57,19 @@ const Projects = () => {
     },
   };
 
+  // Function to handle project change and re-trigger animation
+  const handleProjectChange = (project) => {
+    setAnimationClass('');
+    setTimeout(() => setAnimationClass('animate__fadeIn'), 0);
+    setActiveProject(project);
+  };
+
   // Function to render the details of the active project
   const renderProjectDetails = () => {
     // Retrieve the active projects details
     const project = projects[activeProject];
     return (
-      <div className={styles.projectDetails}>
+      <div className={`${styles.projectDetails} animate__animated ${animationClass}`}>
         <div className={styles.leftColumn}>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
@@ -65,11 +78,7 @@ const Projects = () => {
           <h3>Technologies Used:</h3>
           <p>{project.technologies}</p>
           <h3>Challenges Overcome:</h3>
-          <ul>
-          {project.challenges.map((challenge, index) => (
-              <li key={index}>{challenge}</li>
-          ))}
-          </ul>
+          <p>{project.challenges}</p>
         </div>
 
         <div className={styles.rightColumn}>
@@ -96,19 +105,19 @@ const Projects = () => {
       <div className={styles.buttonsContainer}>
         <button
           className={`${styles.button} ${activeProject === 'portfolio' ? styles.active : ''}`}
-          onClick={() => setActiveProject('portfolio')}
+          onClick={() => handleProjectChange('portfolio')}
         >
           Portfolio Website
         </button>
         <button
-          className={`${styles.button} ${activeProject === 'tbd' ? styles.active : ''}`}
-          onClick={() => setActiveProject('tbd')}
+           className={`${styles.button} ${activeProject === 'tbd' ? styles.active : ''}`}
+           onClick={() => handleProjectChange('tbd')}
         >
           TBD
         </button>
         <button
           className={`${styles.button} ${activeProject === 'tbd' ? styles.active : ''}`}
-          onClick={() => setActiveProject('tbd')}
+          onClick={() => handleProjectChange('tbd')}
         >
           TBD
         </button>
