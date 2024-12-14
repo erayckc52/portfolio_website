@@ -1,10 +1,10 @@
 # Portfolio Website
 
 ## Description
-This portfolio website serves as a showcase for my professional journey, technical skills, and completed projects. Designed to be visually appealing and user-friendly, it demonstrates my expertise in modern web development and responsive design principles.
+This portfolio website serves as a showcase for my professional journey, technical skills and completed projects. Designed to be visually appealing and user-friendly, it demonstrates my expertise in modern web development and responsive design principles.
 
 ## Features
-- **Interactive Sections**: Includes About Me, Experience, Projects, and Contact sections.
+- **Interactive Sections**: Includes About Me, Experience, Projects and Contact sections.
 - **Responsive Design**: Ensures seamless usability across all devices and screen sizes.
 - **Dynamic Components**: Built with React.js to provide smooth transitions and engaging content.
 - **Contact Form**: Integrated with EmailJS for secure and efficient message handling.
@@ -37,6 +37,7 @@ This portfolio website serves as a showcase for my professional journey, technic
 
 ## Usage
 - Explore different sections of the portfolio by navigating through the navbar.
+- Read through About Me and Experience to gain an understanding of my background.
 - Use the contact form to send messages directly to me.
 - Browse through the Projects section for detailed information on my work.
 
@@ -57,11 +58,8 @@ Contributions are welcome! To contribute:
    ```
 5. Open a pull request.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Contact Information
 For any inquiries, feel free to reach out:
-- **Email**: your.email@example.com
+- **Email**: ecekic52@gmail.com
 - **LinkedIn**: [Eray Cekic](https://www.linkedin.com/in/eray-cekic-935449253/)
 - **GitHub**: [erayckc52](https://github.com/erayckc52)
